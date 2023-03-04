@@ -1,0 +1,219 @@
+@media (max-width: 1024px) {
+    body.lock {
+        overflow: hidden;
+    }
+    .burger-btn {
+        display: block;
+        z-index: 999;
+    }
+    .menu {
+        position: fixed;
+        top: -100%;
+        &__items {
+            flex-direction: column;
+            align-items: center;
+            margin-top: 40vh;
+        }
+        &__item {
+            font-size: 36px;
+        }
+    }
+    .top {
+        &__box {
+            margin-left: 20px;
+        }
+        &__name {
+            left: 5%;
+            font-size: 115px;
+        }
+    }
+    .tours__items {
+        z-index: 0;
+    }
+    .tours__item {
+        margin-right: 80px;
+        margin-left: 80px;
+    }
+    .team__btn {
+        z-index: 0;
+    }
+    .description {
+        padding-top: 150px;
+        &__box {
+            z-index: 0;
+            margin-left: 5%;
+        }
+        &__text{
+            margin-left: 20px;
+        }
+        &__title{
+            text-align: center;
+            margin-left: 0;
+        }
+        &__bg{
+            display: block;
+            position: inherit;
+            max-width: 100%;
+            height: auto;
+            margin-top: 75px;
+        }
+    }
+    .team{
+        &__item:not(:last-child){
+            margin-bottom: 50px;
+        }
+        &__btn a{
+            
+        }
+    }
+    .gallary{
+        &__wrapper{
+            column-count: 2;
+        }
+    }
+    .about__slider {
+        z-index: 0;
+    }
+
+}
+@media (max-width: 640px) {
+    body.lock {
+        overflow: hidden;
+    }
+    .burger-btn {
+        display: block;
+        z-index: 999;
+    }
+    .menu {
+        position: fixed;
+        top: -100%;
+        &__items {
+            flex-direction: column;
+            align-items: center;
+            margin-top: 32vh;
+        }
+        &__item {
+            margin-right: 0;
+            margin-bottom: 30px;
+            a::after {
+                content: "";
+                display: block;
+                position: absolute;
+                left: 0;
+                bottom: 16px;
+                width: 0;
+                height: 2px;
+                background-color: #1e82f5;
+                transition: width 0.3s ease-out;
+            }
+            a:hover:after,
+            &:focus:after {
+                width: 100%;
+            }
+        }
+    }
+    .top {
+        padding-top: 210px;
+        &__name {
+            font-size: 56px;
+            left: 2%;
+            top: -85px;
+        }
+        &__box {
+            margin-left: 0;
+        }
+        &__title {
+            font-size: 37px;
+        }
+        &__text {
+            font-size: 15.7px;
+        }
+        &__btn {
+            margin-bottom: 15px;
+            &::before {
+                right: 25px;
+            }
+            a {
+                margin-bottom: 130px;
+            }
+        }
+        &__social {
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: -30px;
+        }
+        &__social-items {
+            justify-content: space-between;
+        }
+    }
+    .tours {
+        &__item {
+            margin-right: 35px;
+            margin-left: 1%;
+        }
+        &__item-inner{
+            padding: 0 12px 25px 12px;
+        }
+        &__item-price {
+            margin-right: 20px;
+        }
+    }
+    .description{
+        &__text{
+            margin-left: 0;
+        }
+    }
+    .about{
+        &__title{
+            font-size: 33.6px;
+        }
+        &__box{
+            flex-wrap: wrap;
+            margin-left: 0;
+        }
+        &__img{
+            position: inherit;
+            max-width: 100%;
+            width: 100%;
+          
+        }
+    }
+    .gallary{
+        &__wrapper{
+            column-count: 1;
+        }
+    }
+    .footer{
+        padding: 85px 0 0;
+        &__wrapper{
+            justify-content: center;
+        }
+        &__logo{
+            text-align: center;
+        }
+        &__box{
+            align-items: center;
+            justify-content: space-between;
+        }
+        &__menu:nth-last-child(1){
+            margin-bottom: 10px;
+        }
+        .social__items{
+            width: 250px;
+            display: flex;
+            justify-content: space-between;
+            &-link{
+                padding-right: 0;
+            }
+        }
+    }
+    .slider__arrows-left {
+        left: 0;
+        bottom: 40%;
+    }
+    .slider__arrows-right {
+        position: absolute;
+        right: 0;
+        bottom: 40%;
+    }
+}
